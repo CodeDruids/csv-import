@@ -111,7 +111,8 @@ class Csvimport {
 
         // Open the CSV for reading
         $this->_get_handle();
-        
+
+        $result = array();
         $row = 0;
 
         while (($data = fgetcsv($this->handle, 0, $this->delimiter)) !== FALSE) 
